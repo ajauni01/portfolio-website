@@ -28,10 +28,10 @@ export default {
         opensans: ["Open Sans", "sans-serif"],
       },
       content: {
-        brush: "url('./assets/brush.png')",
-        person1: "url('./assets/person-1.png')",
-        person2: "url('./assets/person-2.png')",
-        person3: "url('./assets/person-3.png')",
+        brush: "url('./src/assets/brush.png')",
+        person1: "url('./src/assets/person-1.png')",
+        person2: "url('./src/assets/person-2.png')",
+        person3: "url('./src/assets/person-3.png')",
       },
     },
     screens: {
