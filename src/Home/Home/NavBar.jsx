@@ -36,7 +36,7 @@ const NavBar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   </>
 
   return (
-    <nav className={`${navBarBackground}z-40 w-full fixed top-0 py-6`}>
+    <nav className={`${navBarBackground} z-40 w-full fixed top-0 py-6`}>
 
       <div className="flex items-center justify-between mx-auto w-5/6">
         <h4 className="font-playfair text-3xl font-bold">AJ</h4>
@@ -57,7 +57,7 @@ const NavBar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         {/* MOBILE MENU POPUP */}
         {
           !isAboveSmallScreen && isMenuToggled && (
-            <div className="fixed  right-0 bottom-0 h-full bg-blue w-[300px]">
+            <div className="fixed abso right-0 bottom-0 h-full bg-blue w-[300px]">
               {/* CLOSE ICON */}
               <div className="flex justify-end p-10">
                 <button onClick={() => setIsMenuToggled(!isMenuToggled)}>

@@ -3,13 +3,13 @@ import useMediaQuery from "./hooks/useMediaQuery"
 import NavBar from "./Home/Home/NavBar"
 import DotGroup from "./Home/Home/DotGroup"
 import LandingPage from "./Home/LandingPage/LandingPage"
-
+import LineGradient from "./Components/LineGradient"
+import MySkills from "./Home/MySkills/MySkills"
 
 function App() {
   // dictates in which page we are currently in
   const [selectedPage, setSelectedPage] = useState('home')
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
-
 
   // manipulate the background color of navbar upon scrolling
   const [isTopOfPage, setIsTopOfPage] = useState(true);
@@ -26,16 +26,20 @@ function App() {
   return (
     <div className="bg-deep-blue">
       {/* navbar */}
-      <NavBar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage} ></NavBar>
+      <NavBar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       {/* DotGroup NavBar */}
       <div className="w-5/6 mx-auto md:h-full">
         {isAboveMediumScreens && (
           <DotGroup selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
         )}
+        {/* LANDING PAGE */}
+        <LandingPage setSelectedPage={setSelectedPage} />
       </div>
-
-      {/* LANDING PAGE */}
-      <LandingPage setSelectedPage={setSelectedPage} ></LandingPage>
+      <LineGradient />
+      {/* SKILL PAGE */}
+      <div className="w-5/6 mx-auto md:h-full">
+        <MySkills />
+      </div>
 
     </div>
   )
