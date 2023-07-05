@@ -10,7 +10,7 @@ const MySkills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
 
   return (
-    <section id='skills' className='pt-10 pb-80'>
+    <section id='skills' className='pt-10 pb-44'>
       {/* HEADER & IMAGE SECTION FOR MEDIUM SCREENS */}
       <div className='md:flex md:justify-between md:gap-16 mt-32'>
         <motion.div
@@ -53,7 +53,7 @@ const MySkills = () => {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5 }}
           variants={{
-            hidden: { opacity: 0, y: 50 },
+            hidden: { opacity: 0, y: -50 },
             visible: { opacity: 1, y: 50 }
           }}>
           <div className='relative h-32'>
@@ -91,7 +91,7 @@ const MySkills = () => {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ delay: 0.2, duration: 0.5 }}
           variants={{
-            hidden: { opacity: 0, y: 50 },
+            hidden: { opacity: 0, y: -50 },
             visible: { opacity: 1, y: 50 }
           }}>
           <div className='relative h-32'>
@@ -128,7 +128,7 @@ const MySkills = () => {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ delay: 0.4, duration: 0.5 }}
           variants={{
-            hidden: { opacity: 0, y: 50 },
+            hidden: { opacity: 0, y: -50 },
             visible: { opacity: 1, y: 50 }
           }}>
           <div className='relative h-32'>
@@ -165,7 +165,7 @@ const MySkills = () => {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ delay: 0.6, duration: 0.5 }}
           variants={{
-            hidden: { opacity: 0, y: 50 },
+            hidden: { opacity: 0, y: -50 },
             visible: { opacity: 1, y: 50 }
           }}>
           <div className='relative h-32'>
