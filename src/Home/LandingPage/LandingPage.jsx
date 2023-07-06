@@ -72,8 +72,14 @@ const LandingPage = ({ setSelectedPage }) => {
           </AnchorLink>
 
           {/* DOWNLOAD RESUME */}
-          <Link className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5" href="" onClick={() => handleResumeDownload()}>
-
+          <Link
+            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
+            href=""
+            onClick={() => handleResumeDownload()}
+            to=""
+            smooth={true}
+            duration={500}
+          >
             <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">
               Resume <BsDownload className="ms-2 text-xl" />
             </div>
@@ -99,3 +105,4 @@ const LandingPage = ({ setSelectedPage }) => {
 };
 
 export default LandingPage;
+
