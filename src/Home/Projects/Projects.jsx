@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
 import LineGradient from '../../Components/LineGradient';
-import personImg from '../../assets/project-5.jpeg'
-
+import chefRecipeImg from "../../assets/myProjects/Chef-Recipe-Website.jpg"
+import toyMarketPlaceImg from "../../assets/myProjects/Toy-Marketplace-Website.jpg"
+import sportsAcademyHomeImg from "../../assets/myProjects/PowerPlay-sports-website-home.jpg"
+import sportsAcademyAdminImg from "../../assets/myProjects/PowerPlay-sports-website-admin-dashboard.jpg"
+import Modal from '../../Components/Modal';
 
 const container = {
   visible: {
@@ -14,10 +17,33 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 }
 }
 
-const Project = ({ title }) => {
 
+// PROJECT-01 (Chef-Recipe-Website)
+const Project = ({ title }) => {
   const overlayStyles = `absolute w-full h-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
 
+  const projectTitle = title.split(" ").join("-").toLowerCase();
+
+  console.log('lowercase project title', projectTitle)
+
+  return (
+    <motion.div variants={projectVariant} className='relative' >
+      <div className={overlayStyles}>
+
+        <p className='text-2xl font-playfair'>{title}</p>
+        <Modal></Modal>
+
+      </div>
+      <img src={chefRecipeImg} alt="" />
+
+
+    </motion.div>
+  )
+}
+// PROJECT-02 (Toy Marketplace Website)
+const Project2 = ({ title }) => {
+
+  const overlayStyles = `absolute w-full h-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
 
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
@@ -30,13 +56,52 @@ const Project = ({ title }) => {
         <p className='mt-7'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, doloremque.</p>
 
       </div>
-
-      <img src={personImg} alt="" />
-
+      <img src={toyMarketPlaceImg} alt="" />
 
     </motion.div>
   )
 }
+
+// PROJECT-03 (PowerPlay Sports Academy)
+const Project3 = ({ title }) => {
+  const overlayStyles = `absolute w-full h-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+
+  const projectTitle = title.split(" ").join("-").toLowerCase();
+
+  console.log('lowercase project title', projectTitle)
+
+  return (
+    <motion.div variants={projectVariant} className='relative' >
+      <div className={overlayStyles}>
+        <p className='text-2xl font-playfair'>{title}</p>
+        <p className='mt-7'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, doloremque.</p>
+
+      </div>
+      <img src={sportsAcademyHomeImg} alt="" />
+    </motion.div>
+  )
+}
+// PROJECT-04 (PowerPlay Sports Academy Admin)
+const Project4 = ({ title }) => {
+  const overlayStyles = `absolute w-full h-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+
+  const projectTitle = title.split(" ").join("-").toLowerCase();
+
+  console.log('lowercase project title', projectTitle)
+
+  return (
+    <motion.div variants={projectVariant} className='relative' >
+      <div className={overlayStyles}>
+        <p className='text-2xl font-playfair'>{title}</p>
+        <p className='mt-7'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, doloremque.</p>
+
+      </div>
+      <img src={sportsAcademyAdminImg} alt="" />
+    </motion.div>
+  )
+}
+
+
 
 const Projects = () => {
 
@@ -78,12 +143,10 @@ const Projects = () => {
           <div className='flex justify-center text-center items-center p-10 bg-red max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold'>
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Project 1" />
-          <Project title="Project 2" />
-
-          {/* ROW-2 */}
-          <Project title="Project 3" />
-          <Project title="Project 4" />
+          <Project title="Chef Recipe Website" />
+          <Project2 title="Toy Marketplace Website" />
+          <Project3 title="PowerPlay Sports Academy (Home)" />
+          <Project4 title="PowerPlay Sports Academy (Admin)" />
 
           <div className='flex justify-center text-center items-center p-10 bg-blue max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold'>
             SMOOTH USER EXPERIENCE
