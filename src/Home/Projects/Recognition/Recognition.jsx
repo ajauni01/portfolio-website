@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
 import LineGradient from '../../../Components/LineGradient';
+import instructorImg from "../../../assets/myProjects/recognitionImg.png"
 
 const Recognition = () => {
 
-  const recognitionStyles = `mx-auto relative max-w-[400px] h-[350px] flex flex-col justify-end pt-16 mt-48 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`
+  const recognitionStyles = `mx-auto relative flex flex-col justify-end pt-16 mt-48 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`
 
   return (
     <section id="recognition" className="pt-32 pb-16">
@@ -29,7 +30,7 @@ const Recognition = () => {
       {/* RECOGNITION */}
       <div className='md:flex md:justify-between gap-8'>
         <motion.div
-          className={`bg:blue ${recognitionStyles} before:content-person1`}
+          className={`${recognitionStyles}`}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -39,6 +40,7 @@ const Recognition = () => {
             visible: { opacity: 1, scale: 1 }
           }}
         >
+          <img src={instructorImg} alt="" />
 
         </motion.div>
       </div>
