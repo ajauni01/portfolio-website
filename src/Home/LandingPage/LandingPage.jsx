@@ -26,7 +26,7 @@ const LandingPage = ({ setSelectedPage }) => {
   const handleResumeDownload = () => {
     const link = document.createElement('a');
     // link.href = 'https://drive.google.com/uc?export=download&id=1F8hn5dysuc9jfU_apgpo6GE_ZQv7TFhN';
-    link.href = '/public/Resume of Ajharul Islam Aunik.pdf';
+    link.href = '/src/assets/resume/Resume of Ajharul Islam Aunik.pdf';
     link.setAttribute('download', 'Resume of Ajharul Islam Aunik.pdf');
     // link.target = '_blank';
     // link.rel = 'noopener noreferrer';
