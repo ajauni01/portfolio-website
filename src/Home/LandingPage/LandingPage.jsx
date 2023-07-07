@@ -11,17 +11,30 @@ const LandingPage = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
 
   //  function to handle resume download
+  // const handleResumeDownload = (event) => {
+  //   event.preventDefault();
+  //   const link = document.createElement('a');
+  //   link.href = 'https://drive.google.com/file/d/1F8hn5dysuc9jfU_apgpo6GE_ZQv7TFhN/view?usp=sharing';
+  //   link.setAttribute('download', 'Resume of Ajharul Islam Aunik.pdf');
+  //   link.target = '_blank';
+  //   link.rel = 'noopener noreferrer';
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
+
   const handleResumeDownload = () => {
-    console.log('handleResumeDownload Function is called')
     const link = document.createElement('a');
+    // link.href = 'https://drive.google.com/uc?export=download&id=1F8hn5dysuc9jfU_apgpo6GE_ZQv7TFhN';
     link.href = '/public/Resume of Ajharul Islam Aunik.pdf';
     link.setAttribute('download', 'Resume of Ajharul Islam Aunik.pdf');
+    // link.target = '_blank';
+    // link.rel = 'noopener noreferrer';
     link.click();
   };
 
   return (
     <section id="home" className="md:flex md:justify-between md:items-center md:h-full gap-16 py-10">
-
 
       {/* IMAGE SECTION */}
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-40">
@@ -75,7 +88,7 @@ const LandingPage = ({ setSelectedPage }) => {
           <Link
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
             href=""
-            onClick={() => handleResumeDownload()}
+            onClick={handleResumeDownload}
             to=""
             smooth={true}
             duration={500}
@@ -84,6 +97,7 @@ const LandingPage = ({ setSelectedPage }) => {
               Resume <BsDownload className="ms-2 text-xl" />
             </div>
           </Link>
+
         </motion.div>
 
         {/* SOCIAL MEDIA ICONS */}
