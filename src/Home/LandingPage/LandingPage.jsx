@@ -52,7 +52,7 @@ const LandingPage = ({ setSelectedPage }) => {
           </p>
 
           {/* TEXT */}
-          <p className="mt-10 mb-7 font-playfair text-lg text-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus exercitationem vel doloremque unde rerum amet sapiente blanditiis soluta facere officia!</p>
+          <p className="mt-10 mb-7 font-playfair text-lg text-start text-lg">Welcome to my World of Web Development: Exploring the Boundless Possibilities of the MERN Stack</p>
         </motion.div>
 
         {/* CALL TO ACTIONS */}

@@ -8,6 +8,7 @@ import MySkills from "./Home/MySkills/MySkills"
 import Projects from "./Home/Projects/Projects"
 import Recognition from "./Home/Projects/Recognition/Recognition"
 import Contact from "./Home/Contact/Contact"
+import Footer from "./Home/Footer/Footer"
 
 function App() {
   // dictates in which page we are currently in
@@ -58,6 +59,7 @@ function App() {
       <div className="w-5/6 mx-auto">
         <Contact />
       </div>
+      <Footer />
 
     </div>
   )
