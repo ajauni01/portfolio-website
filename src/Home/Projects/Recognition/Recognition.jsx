@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import LineGradient from '../../../Components/LineGradient';
 
-
 const Recognition = () => {
 
   const recognitionStyles = `mx-auto relative max-w-[400px] h-[350px] flex flex-col justify-end pt-16 mt-48 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`
@@ -21,15 +20,16 @@ const Recognition = () => {
       >
         <p className='font-playfair font-semibold text-4xl mb-5 text-red'>
           Instructor Recommendation
+
         </p>
         <LineGradient width="mx-auto w-2/4" />
         <p className='mt-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, impedit.
         </p>
       </motion.div>
       {/* RECOGNITION */}
-      <div className='md:flex justify-start md:justify-center gap-8'>
+      <div className='md:flex md:justify-between gap-8'>
         <motion.div
-          className={`bg:blue ${recognitionStyles}before::content-person1 before:md:content-person1`}
+          className={`bg:blue ${recognitionStyles} before:content-person1`}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
