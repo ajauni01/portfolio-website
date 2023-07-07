@@ -6,6 +6,8 @@ import LandingPage from "./Home/LandingPage/LandingPage"
 import LineGradient from "./Components/LineGradient"
 import MySkills from "./Home/MySkills/MySkills"
 import Projects from "./Home/Projects/Projects"
+import Recognition from "./Home/Projects/Recognition/Recognition"
+import Contact from "./Home/Contact/Contact"
 
 function App() {
   // dictates in which page we are currently in
@@ -46,7 +48,16 @@ function App() {
       <div className="w-5/6 mx-auto">
         <Projects />
       </div>
-
+      {/* RECOGNITION */}
+      <LineGradient />
+      <div className="w-5/6 mx-auto">
+        <Recognition />
+      </div>
+      {/* CONTACT */}
+      <LineGradient />
+      <div className="w-5/6 mx-auto">
+        <Contact />
+      </div>
 
     </div>
   )
