@@ -65,7 +65,7 @@ const LandingPage = ({ setSelectedPage }) => {
           </p>
 
           {/* TEXT */}
-          <p className="mt-10 mb-7 font-playfair text-lg text-start text-lg">Welcome to my World of Web Development: Exploring the Boundless Possibilities of the MERN Stack</p>
+          <p className="mt-10 mb-7 font-playfair text-lg text-start text-lg">Welcome to my World of Web Development: Exploring the Boundless Possibilities of the MERN Stack. edit it</p>
         </motion.div>
 
         {/* CALL TO ACTIONS */}
