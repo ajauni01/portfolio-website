@@ -5,9 +5,9 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { BsDownload } from "react-icons/bs";
 import { Link } from "react-scroll";
 import SocialMediaIcons from "../../Components/SocialMediaIcons";
-import { useEffect, useState } from "react";
 import React from "react";
 import TextTransition, { presets } from "react-text-transition";
+import Resume from "../../assets/Resume of Ajharul Islam Aunik.pdf";
 
 const LandingPage = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -39,15 +39,17 @@ const LandingPage = ({ setSelectedPage }) => {
     return () => clearTimeout(intervalId);
   }, []);
 
+  // function to handle resume download
   const handleResumeDownload = () => {
+    // Create a new hidden anchor element
     const link = document.createElement("a");
-    link.href =
-      "https://drive.google.com/uc?export=download&id=1F8hn5dysuc9jfU_apgpo6GE_ZQv7TFhN";
-    // link.href = '/src/assets/resume/Resume of Ajharul Islam Aunik.pdf';
-    link.setAttribute("download", "Resume of Ajharul Islam Aunik.pdf");
-    // link.target = '_blank';
-    // link.rel = 'noopener noreferrer';
+    link.href = Resume;
+    link.download = "Resume of Ajharul Islam";
+    link.style.display = "none";
+
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
   };
 
   return (
