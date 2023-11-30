@@ -28,7 +28,7 @@ export default {
         opensans: ["Open Sans", "sans-serif"],
       },
       content: {
-        brush: "url('./src/assets/brush.png')",
+        brush: "url('/brush.png')",
         person1: "url('./src/assets/myProjects/recognitionImg.png')",
       },
     },
