@@ -1,5 +1,5 @@
 import useMediaQuery from "../../hooks/useMediaQuery";
-import profileImg from "../../assets/profile-img-3.png";
+import profileImg from "../../assets/profile-img.png";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { BsDownload } from "react-icons/bs";
