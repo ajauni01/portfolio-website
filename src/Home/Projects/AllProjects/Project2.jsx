@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
 import Modal from "../../../Components/Modal";
-import toyMarketPlaceImg from "../../../assets/myProjects/Toy-Marketplace-Website.jpg";
+import dallECloneImg from "../../../assets/myProjects/dallEcloneImg.png";
 
 const Project2 = () => {
-  const serverSite = "https://github.com/ajauni01/Toy-Marketplace-Server-Side";
-  const clientSide = "https://github.com/ajauni01/Toy-Marketplace-Client-Side";
-  const liveSite = "https://toymarketplace-eccad.web.app/";
+  const repository = "https://github.com/ajauni01/dall-e-clone";
+  const liveSite = "https://dall-e-clone-final-site.vercel.app/";
 
   const overlayStyles = `absolute w-full h-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
 
@@ -14,7 +13,7 @@ const Project2 = () => {
     visible: { opacity: 1, scale: 1 },
   };
 
-  const projectTitle = "Toy Marketplace Website";
+  const projectTitle = "Dall-E Clone Website";
 
   return (
     <motion.div variants={projectVariant} className="relative">
@@ -23,12 +22,11 @@ const Project2 = () => {
         <Modal
           id="my_modal_2"
           projectTitle={projectTitle}
-          serverSite={serverSite}
-          clientSide={clientSide}
+          repository={repository}
           liveSite={liveSite}
         />
       </div>
-      <img src={toyMarketPlaceImg} alt="" />
+      <img src={dallECloneImg} alt="" />
     </motion.div>
   );
 };
