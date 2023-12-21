@@ -1,7 +1,6 @@
-// PROJECT-02 (Toy Marketplace Website)
 import { motion } from "framer-motion";
-import toyMarketPlaceImg from "../../../assets/myProjects/Toy-Marketplace-Website.jpg";
 import Modal from "../../../Components/Modal";
+import toyMarketPlaceImg from "../../../assets/myProjects/Toy-Marketplace-Website.jpg";
 
 const Project2 = () => {
   const serverSite = "https://github.com/ajauni01/Toy-Marketplace-Server-Side";

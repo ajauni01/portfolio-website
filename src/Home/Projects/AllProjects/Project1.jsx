@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Modal from "../../../Components/Modal";
-import chefRecipeImg from "../../../assets/myProjects/Chef-Recipe-Website.jpg";
+import IssueTrackerImg from "../../../assets/myProjects/IssueTracker.png";
 
 const Project1 = () => {
   // serverSite Code URL
@@ -30,7 +30,7 @@ const Project1 = () => {
             liveSite={liveSite}
           />
         </div>
-        <img src={chefRecipeImg} alt="" />
+        <img src={IssueTrackerImg} alt="" />
       </motion.div>
     </>
   );
