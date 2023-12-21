@@ -1,6 +1,5 @@
-const Modal = ({ id, projectTitle, serverSite, clientSide, liveSite }) => {
-  console.log("project title", projectTitle);
-
+const Modal = ({ id, projectTitle, repository, liveSite }) => {
+  //   show model function to open the modal based on id
   const showModal = () => {
     const modal = document.getElementById(id);
     if (modal) {
@@ -15,27 +14,19 @@ const Modal = ({ id, projectTitle, serverSite, clientSide, liveSite }) => {
         View Details
       </button>
       <dialog id={id} className="modal modal-bottom sm:modal-middle">
-        <form method="dialog" className="modal-box bg-gray-300">
-          <h3 className="font-bold text-2xl">
-            <span className="pe-2">{projectTitle}</span>Credentials
+        <form method="dialog" className="modal-box bg-slate-50">
+          <h3 className="font-bold text-black text-2xl">
+            <span className="pe-2">{projectTitle}</span>
           </h3>
 
           <div className="py-4">
             <a
               className="pe-2 underline text-blue text-xl"
-              href={serverSite}
+              href={repository}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Server Site
-            </a>
-            <a
-              className="pe-2 underline text-blue text-xl"
-              href={clientSide}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Client Site
+              Repository
             </a>
             <a
               className="underline text-blue text-xl"
@@ -48,7 +39,7 @@ const Modal = ({ id, projectTitle, serverSite, clientSide, liveSite }) => {
           </div>
           <div className="modal-action">
             {/* if there is a button in form, it will close the modal */}
-            <button className="btn">Close</button>
+            <button className="btn text-slate-50">Close</button>
           </div>
         </form>
       </dialog>

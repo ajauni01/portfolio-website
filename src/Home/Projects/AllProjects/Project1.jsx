@@ -4,9 +4,8 @@ import IssueTrackerImg from "../../../assets/myProjects/IssueTracker.png";
 
 const Project1 = () => {
   // serverSite Code URL
-  const serverSite = "https://github.com/ajauni01/Chef-Recipe-Server-Side";
-  const clientSide = "https://github.com/ajauni01/Chef-Recipe-Client-Side";
-  const liveSite = "https://chef-recipe-website-66c1c.web.app/";
+  const repository = "https://github.com/ajauni01/issue-tracker-updated";
+  const liveSite = "https://issue-tracker-updated-5skdfrmuz-ajauni01.vercel.app/∏";
 
   const overlayStyles = `absolute w-full h-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
 
@@ -15,7 +14,7 @@ const Project1 = () => {
     visible: { opacity: 1, scale: 1 },
   };
 
-  const projectTitle = "Chef-Recipe-Website";
+  const projectTitle = "Issue Tracker Website";
 
   return (
     <>
@@ -25,8 +24,7 @@ const Project1 = () => {
           <Modal
             id="my_modal_1"
             projectTitle={projectTitle}
-            serverSite={serverSite}
-            clientSide={clientSide}
+            repository={repository}
             liveSite={liveSite}
           />
         </div>
