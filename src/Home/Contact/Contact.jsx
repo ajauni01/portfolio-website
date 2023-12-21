@@ -18,7 +18,7 @@ const Contact = () => {
     <section id="contact" className="py-48">
       {/* HEADINGS */}
       <motion.div
-        className="flex justify-end w-full"
+        className="flex md:justify-center xs:justify-start w-full"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -28,9 +28,9 @@ const Contact = () => {
           visible: { opacity: 1, x: 50 }
         }}
       >
-        <p className='font-playfair font-semibold text-4xl basis-1/2 text-end md:me-6'>
+        <p className='font-playfair font-semibold md:text-4xl xs:text-3xl basis-1/2'>
           <span className="text-yellow">CONTACT ME </span> TO GET STARTED
-          <LineGradient className="text-end basis-1/2" />
+          <LineGradient className="basis-1/2" />
         </p>
 
         {/* <div className="flex md:justify-end my-5">
