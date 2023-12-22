@@ -4,7 +4,7 @@ import dallECloneImg from "../../../assets/myProjects/dallEcloneImg.png";
 
 const Project2 = () => {
   const repository = "https://github.com/ajauni01/dall-e-clone";
-  const liveSite = "https://dall-e-clone-final-site.vercel.app/";
+  const liveSite = "https://dall-e-clone-client-seven.vercel.app/";
 
   const overlayStyles = `absolute w-full h-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
 
