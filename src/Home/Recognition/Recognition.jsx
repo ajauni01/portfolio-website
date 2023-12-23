@@ -27,7 +27,7 @@ const Recognition = () => {
         <LineGradient width="mx-auto w-2/4" />
         {/* description */}
         <p className="mt-2">
-          Endorsement Excellence: Esteemed Recommendation by Dr. Lori
+          Endorsement Excellence: Esteemed Recommendation by Dr.Lori
           Nicholson, Professor of Computer Technology & Information Systems at
           Wayne State College
         </p>
