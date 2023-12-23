@@ -21,14 +21,15 @@ const Recognition = () => {
       >
         {/* title */}
         <p className="font-playfair font-semibold text-4xl mb-5 text-red">
-          Instructor Recommendation
+          Professor Recommendation
         </p>
         {/* Gradient line */}
         <LineGradient width="mx-auto w-2/4" />
         {/* description */}
         <p className="mt-2">
-          Endorsement Excellence: Acclaimed Testimonial from Debbie Johnson,
-          Computer Science Instructor at the Wayne State College
+          Endorsement Excellence: Esteemed Recommendation by Dr. Lori
+          Nicholson, Professor of Computer Technology & Information Systems at
+          Wayne State College
         </p>
       </motion.div>
       {/* Instructor recognition */}
@@ -48,7 +49,7 @@ const Recognition = () => {
           <img
             className="md:mt-[-150px] xs:mt-[-200px]"
             src={instructorImg}
-            alt=""
+            alt="Image of the professor recommendation"
           />
         </motion.div>
       </div>
