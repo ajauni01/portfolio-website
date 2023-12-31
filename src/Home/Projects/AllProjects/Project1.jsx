@@ -5,7 +5,7 @@ import IssueTrackerImg from "../../../assets/myProjects/IssueTracker.png";
 const Project1 = () => {
   // serverSite Code URL
   const repository = "https://github.com/ajauni01/issue-tracker-updated";
-  const liveSite = "https://issue-tracker-updated-5skdfrmuz-ajauni01.vercel.app/∏";
+  const liveSite = "https://issue-tracker-updated.vercel.app/";
 
   const overlayStyles = `absolute w-full h-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
 
